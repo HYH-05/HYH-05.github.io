@@ -8,3 +8,14 @@
 section h2 {
   font-weight: 700 !important;
 }
+
+// Caption 내 줄바꿈 및 여백
+.item-caption,
+.caption,
+.time {
+  white-space: pre-line !important;
+  p, em {
+    display: block;
+    margin-top: 0.5em;
+  }
+}
