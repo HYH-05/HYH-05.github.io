@@ -95,15 +95,16 @@ content:
       - layout: left
         border: weak
         title: 모니터링 통합 프로그램 개발
+        sub_title: 중앙 집중화된 GUI 환경에서 실시간 관제, 장애 시 SMS 자동 알림
         link: https://github.com/HYH-05/Public/tree/main/projects/monitoring-dashboard
         link_text: GitHub
         github: HYH-05/Server-Monitoring
         caption: 2025
         thumbnail: images/project-monitoring.png
-        quote: >
-          중앙 집중화된 GUI 환경에서 실시간으로 관제하고, 장애 발생 시 자동으로 SMS 알림을 발송하는 통합 모니터링 시스템 구축
         description: |
           <img src="images/project-monitoring.png" width="50%" alt="모니터링 GUI">
+
+          [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/HYH-05/Public/tree/main/projects/monitoring-dashboard)
 
           **담당 역할:** 시스템 설계 및 개발
 
