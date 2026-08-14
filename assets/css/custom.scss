@@ -1,0 +1,12 @@
+// Custom styles for portfolio
+
+// Section titles bold
+.section-header {
+  font-weight: bold !important;
+}
+
+// Alternative: target h2 in section
+h2.section-title,
+.col-header h2 {
+  font-weight: 700 !important;
+}
