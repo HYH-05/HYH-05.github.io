@@ -92,6 +92,8 @@ content:
         border: weak
         title: 모니터링 통합 프로그램 개발
         link: https://github.com/HYH-05/Server-Monitoring
+        link_text: GitHub
+        github: HYH-05/Server-Monitoring
         caption: 2025
         # thumbnail: images/project-monitoring.png
         quote: >
