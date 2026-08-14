@@ -60,7 +60,7 @@ content:
 
           **기술 스택:** AWS (EC2, VPC, Security Group, EIP, EBS, S3, Network Firewall), IDC, FortiGate, Rocky Linux, MySQL, Bash, Zabbix, SoftEther VPN
 
-      - layout: right
+      - layout: left
         border: weak
         title: ELK 기반 통합 로그 분석 및 보안 관제 시스템 구축
         caption: 2025
@@ -116,7 +116,7 @@ content:
 
           **기술 스택:** Python, GUI, API 연동, 암호화
 
-      - layout: right
+      - layout: left
         border: weak
         title: GitLab 마이그레이션
         caption: 2025
@@ -167,7 +167,7 @@ content:
 
           **기술 스택:** Bash, rsync, AWS S3, zstd
 
-      - layout: right
+      - layout: left
         border: weak
         title: (구)게임 백업 데이터 이전 + 내부 백업 서버 교체
         caption: 2024
