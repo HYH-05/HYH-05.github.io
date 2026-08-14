@@ -16,6 +16,12 @@ darkmode: false
 # Social links
 github_username: HYH-05
 
+# Additional links
+additional_links:
+  - title: Infra Scripts
+    icon: fas fa-code
+    url: https://github.com/HYH-05/Public
+
 # About Section
 about_profile_image: images/profile.jpg
 about_content: |
@@ -91,7 +97,7 @@ content:
       - layout: left
         border: weak
         title: 모니터링 통합 프로그램 개발
-        link: https://github.com/HYH-05/Server-Monitoring
+        link: https://github.com/HYH-05/Public/tree/main/projects/monitoring-dashboard
         link_text: GitHub
         github: HYH-05/Server-Monitoring
         caption: 2025
