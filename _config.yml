@@ -40,9 +40,8 @@ content:
       - layout: left
         border: weak
         title: AWS → IDC 게임 서버 인프라 마이그레이션
+        sub_title: AWS 멀티 리전 글로벌 게임 인프라를 IDC로 마이그레이션, 운영 비용 절감
         caption: 2026
-        quote: >
-          AWS 멀티 리전에서 운영 중인 글로벌 게임 서비스 인프라를 온프레미스(IDC)로 마이그레이션하여 운영 비용 절감 및 인프라 효율화
         description: |
 
           **담당 역할:** 인프라 아키텍처 설계 및 마이그레이션 총괄
@@ -67,10 +66,9 @@ content:
       - layout: left
         border: weak
         title: ELK 기반 통합 로그 분석 및 보안 관제 시스템 구축
+        sub_title: 분산된 인프라 로그를 중앙 수집, ELK 기반 보안 관제 체계 구축
         caption: 2025
         thumbnail: images/project-elk.png
-        quote: >
-          IDC, 사무실 방화벽, 웹 서비스(LB, WAF) 등 분산된 인프라 환경의 로그를 중앙 집중식으로 수집하고, ELK 스택을 활용하여 보안 관제 및 트래픽 분석 체계 구축
         description: |
           <img src="images/project-elk.png" width="50%" alt="Kibana 대시보드">
 
@@ -104,8 +102,6 @@ content:
         description: |
           <img src="images/project-monitoring.png" width="50%" alt="모니터링 GUI">
 
-          [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/HYH-05/Public/tree/main/projects/monitoring-dashboard)
-
           **담당 역할:** 시스템 설계 및 개발
 
           **수행 업무**
@@ -124,9 +120,8 @@ content:
       - layout: left
         border: weak
         title: GitLab 마이그레이션
+        sub_title: design-git, dev-git, web-git 서버 마이그레이션 및 재설치
         caption: 2025
-        quote: >
-          design-git, dev-git, web-git 서버의 마이그레이션 및 재설치 작업
         description: |
 
           **담당 역할:** 마이그레이션 수행 및 트러블슈팅
@@ -148,9 +143,8 @@ content:
       - layout: left
         border: weak
         title: IDC, S3 로그 백업 프로세스 수정
+        sub_title: 2차 백업(서버→IDC), 3차 백업(IDC→S3) 프로세스 재정립 및 스크립트 고도화
         caption: 2025
-        quote: >
-          전사 게임 서버의 2차 백업(게임 서버 → IDC) 및 3차 백업(IDC → S3) 프로세스 재정립 및 스크립트 고도화
         description: |
 
           **담당 역할:** 백업 프로세스 설계 및 스크립트 개발
@@ -171,9 +165,8 @@ content:
       - layout: left
         border: weak
         title: (구)게임 백업 데이터 이전 + 내부 백업 서버 교체
+        sub_title: 온프레미스 백업 데이터 S3 이전 및 백업 서버 교체
         caption: 2024
-        quote: >
-          기존 온프레미스 서버의 백업 데이터를 S3로 이전하고, 내부 백업 서버 교체
         description: |
 
           **담당 역할:** 데이터 이전 및 검증
@@ -195,9 +188,8 @@ content:
       - layout: left
         border: weak
         title: Ansible 도입
+        sub_title: Ansible + Semaphore로 코드형 인프라(IaC) 도입
         caption: 2025
-        quote: >
-          Ansible과 Semaphore 도입을 통해 코드형 인프라(IaC) 원칙을 조직의 운영 방식에 통합
         description: |
 
           **담당 역할:** IaC 도입 및 자동화 구축
@@ -216,7 +208,7 @@ content:
 
           **기술 스택:** Ansible, Semaphore, Git, IaC
 
-  - title: Experience
+  - title: Career
     layout: list
     content:
       - layout: left
@@ -255,40 +247,64 @@ content:
     layout: text
     content: |
       **Cloud**
-      - AWS (EC2, VPC, Security Group, EIP, EBS, S3, Network Firewall, Auto Scaling)
+
+      ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+      ![EC2](https://img.shields.io/badge/EC2-FF9900?style=flat-square&logo=amazonec2&logoColor=white)
+      ![S3](https://img.shields.io/badge/S3-569A31?style=flat-square&logo=amazons3&logoColor=white)
+      ![VPC](https://img.shields.io/badge/VPC-FF9900?style=flat-square)
 
       **On-Premise**
-      - IDC 인프라 관리, NAS, L2/L3 네트워크
+
+      ![IDC](https://img.shields.io/badge/IDC-333333?style=flat-square)
+      ![NAS](https://img.shields.io/badge/NAS-0078D4?style=flat-square)
+      ![L2/L3](https://img.shields.io/badge/L2%2FL3_Network-006699?style=flat-square)
 
       **OS**
-      - Linux (CentOS, Rocky Linux), Windows Server
+
+      ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+      ![CentOS](https://img.shields.io/badge/CentOS-262577?style=flat-square&logo=centos&logoColor=white)
+      ![Rocky Linux](https://img.shields.io/badge/Rocky_Linux-10B981?style=flat-square&logo=rockylinux&logoColor=white)
+      ![Windows Server](https://img.shields.io/badge/Windows_Server-0078D6?style=flat-square&logo=windows&logoColor=white)
 
       **Database**
-      - MySQL
+
+      ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 
       **Monitoring & Logging**
-      - Zabbix, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana)
+
+      ![Zabbix](https://img.shields.io/badge/Zabbix-CC0000?style=flat-square&logo=zabbix&logoColor=white)
+      ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
+      ![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white)
+      ![Logstash](https://img.shields.io/badge/Logstash-005571?style=flat-square&logo=logstash&logoColor=white)
+      ![Kibana](https://img.shields.io/badge/Kibana-005571?style=flat-square&logo=kibana&logoColor=white)
 
       **Firewall & Security**
-      - FortiGate, iptables, firewalld, AWS Security Group, WAF, LB
+
+      ![FortiGate](https://img.shields.io/badge/FortiGate-EE3124?style=flat-square&logo=fortinet&logoColor=white)
+      ![iptables](https://img.shields.io/badge/iptables-333333?style=flat-square)
+      ![WAF](https://img.shields.io/badge/WAF-FF9900?style=flat-square)
 
       **Automation & IaC**
-      - Ansible, Semaphore, Terraform
+
+      ![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white)
+      ![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat-square&logo=terraform&logoColor=white)
 
       **Scripting**
-      - Bash, Python
 
-      **Version Control & CI/CD**
-      - Git, SVN, CI/CD 파이프라인
+      ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+      ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+
+      **Version Control**
+
+      ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+      ![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
+      ![SVN](https://img.shields.io/badge/SVN-809CC9?style=flat-square&logo=subversion&logoColor=white)
 
       **Backup & Storage**
-      - rsync, AWS S3, RAID, SMART, 백업 검증
 
-      **VPN**
-      - SoftEther VPN
-
-      **System Administration**
-      - 시스템 모니터링 (CPU/Memory/Disk), 보안 점검, 로그 분석
+      ![rsync](https://img.shields.io/badge/rsync-333333?style=flat-square)
+      ![S3](https://img.shields.io/badge/S3-569A31?style=flat-square&logo=amazons3&logoColor=white)
+      ![RAID](https://img.shields.io/badge/RAID-0078D4?style=flat-square)
 
 # Footer
 footer_show_references: false
