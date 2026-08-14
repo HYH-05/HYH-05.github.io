@@ -40,8 +40,9 @@ content:
       - layout: left
         border: weak
         title: AWS → IDC 게임 서버 인프라 마이그레이션
-        sub_title: AWS 멀티 리전 글로벌 게임 인프라를 IDC로 마이그레이션, 운영 비용 절감
-        caption: 2026
+        caption: |
+          2026
+          <br><em>AWS 멀티 리전 글로벌 게임 인프라를 IDC로 마이그레이션, 운영 비용 절감</em>
         description: |
 
           **담당 역할:** 인프라 아키텍처 설계 및 마이그레이션 총괄
@@ -66,8 +67,9 @@ content:
       - layout: left
         border: weak
         title: ELK 기반 통합 로그 분석 및 보안 관제 시스템 구축
-        sub_title: 분산된 인프라 로그를 중앙 수집, ELK 기반 보안 관제 체계 구축
-        caption: 2025
+        caption: |
+          2025
+          <br><em>분산된 인프라 로그를 중앙 수집, ELK 기반 보안 관제 체계 구축</em>
         thumbnail: images/project-elk.png
         description: |
           <img src="images/project-elk.png" width="50%" alt="Kibana 대시보드">
@@ -93,14 +95,14 @@ content:
       - layout: left
         border: weak
         title: 모니터링 통합 프로그램 개발
-        sub_title: 중앙 집중화된 GUI 환경에서 실시간 관제, 장애 시 SMS 자동 알림
-        link: https://github.com/HYH-05/Public/tree/main/projects/monitoring-dashboard
-        link_text: GitHub
-        github: HYH-05/Server-Monitoring
-        caption: 2025
+        caption: |
+          2025
+          <br><em>중앙 집중화된 GUI 환경에서 실시간 관제, 장애 시 SMS 자동 알림</em>
         thumbnail: images/project-monitoring.png
         description: |
           <img src="images/project-monitoring.png" width="50%" alt="모니터링 GUI">
+
+          [![GitHub](https://img.shields.io/badge/🔗_GitHub-Source_Code-2ea44f?style=for-the-badge)](https://github.com/HYH-05/Public/tree/main/projects/monitoring-dashboard)
 
           **담당 역할:** 시스템 설계 및 개발
 
@@ -120,8 +122,9 @@ content:
       - layout: left
         border: weak
         title: GitLab 마이그레이션
-        sub_title: design-git, dev-git, web-git 서버 마이그레이션 및 재설치
-        caption: 2025
+        caption: |
+          2025
+          <br><em>design-git, dev-git, web-git 서버 마이그레이션 및 재설치</em>
         description: |
 
           **담당 역할:** 마이그레이션 수행 및 트러블슈팅
@@ -143,8 +146,9 @@ content:
       - layout: left
         border: weak
         title: IDC, S3 로그 백업 프로세스 수정
-        sub_title: 2차 백업(서버→IDC), 3차 백업(IDC→S3) 프로세스 재정립 및 스크립트 고도화
-        caption: 2025
+        caption: |
+          2025
+          <br><em>2차 백업(서버→IDC), 3차 백업(IDC→S3) 프로세스 재정립 및 스크립트 고도화</em>
         description: |
 
           **담당 역할:** 백업 프로세스 설계 및 스크립트 개발
@@ -165,8 +169,9 @@ content:
       - layout: left
         border: weak
         title: (구)게임 백업 데이터 이전 + 내부 백업 서버 교체
-        sub_title: 온프레미스 백업 데이터 S3 이전 및 백업 서버 교체
-        caption: 2024
+        caption: |
+          2024
+          <br><em>온프레미스 백업 데이터 S3 이전 및 백업 서버 교체</em>
         description: |
 
           **담당 역할:** 데이터 이전 및 검증
@@ -188,8 +193,9 @@ content:
       - layout: left
         border: weak
         title: Ansible 도입
-        sub_title: Ansible + Semaphore로 코드형 인프라(IaC) 도입
-        caption: 2025
+        caption: |
+          2025
+          <br><em>Ansible + Semaphore로 코드형 인프라(IaC) 도입</em>
         description: |
 
           **담당 역할:** IaC 도입 및 자동화 구축
