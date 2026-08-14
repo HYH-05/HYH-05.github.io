@@ -64,11 +64,11 @@ content:
         border: weak
         title: ELK 기반 통합 로그 분석 및 보안 관제 시스템 구축
         caption: 2025
-        thumbnail: images/project-elk.png
+        # thumbnail: images/project-elk.png
         quote: >
           IDC, 사무실 방화벽, 웹 서비스(LB, WAF) 등 분산된 인프라 환경의 로그를 중앙 집중식으로 수집하고, ELK 스택을 활용하여 보안 관제 및 트래픽 분석 체계 구축
         description: |
-          <!-- ![Kibana 대시보드](images/project-elk.png) -->
+          ![Kibana 대시보드](images/project-elk.png)
 
           **담당 역할:** 로그 수집 파이프라인 설계 및 ELK 시스템 구축
 
