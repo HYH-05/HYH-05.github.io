@@ -218,7 +218,7 @@ content:
   - title: Experience
     layout: list
     content:
-      - layout: right
+      - layout: left
         title: (주)마상소프트
         sub_title: Infrastructure Engineer
         caption: 2024.08 - 현재
@@ -235,7 +235,7 @@ content:
   - title: Education
     layout: list
     content:
-      - layout: top-right
+      - layout: left
         title: 인제대학교
         sub_title: 컴퓨터공학부 (학사)
         caption: 2019.03 - 2025.02
@@ -245,7 +245,7 @@ content:
   - title: Certifications
     layout: list
     content:
-      - layout: top-right
+      - layout: left
         title: 리눅스 마스터 2급
         sub_title: KAIT
         caption: 2025.10.03
