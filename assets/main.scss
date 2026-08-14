@@ -1,22 +1,21 @@
 ---
 ---
 
-@import "modern-resume-theme";
+@import 'modern-resume-theme';
 
-// Section titles (Projects, Career, Education 등) 볼드 처리
-.row .col-xs-12 > h2,
-section h2 {
+// Section titles 볼드
+h3 {
   font-weight: 700 !important;
 }
 
-// Caption 내 줄바꿈 및 여백
-.item-caption,
-.caption,
-.time {
+// Caption 영역 스타일 - 줄바꿈 유지 및 em 스타일
+.layout .details p {
   white-space: pre-line !important;
-  p, em {
-    display: block;
-    margin-top: 0.5em;
-    font-size: 0.85em;
-  }
+}
+
+.layout .details p em {
+  display: block !important;
+  margin-top: 8px !important;
+  font-size: 0.85em !important;
+  font-style: italic !important;
 }
