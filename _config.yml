@@ -54,7 +54,7 @@ content:
           - 마이그레이션 계획 수립 및 실행 (서비스 영향도 분석, 롤백 계획, 단계별 검증)
 
           **성과**
-          - Live/QA 환경 무중단 마이그레이션 완료
+          - Live/QA 환경 마이그레이션 완료
           - AWS 월 운영 비용 절감 (Network Firewall 제거, 미사용 리소스 정리)
           - 하이브리드 아키텍처 구축으로 서비스 연속성 확보
 
@@ -95,7 +95,7 @@ content:
         link_text: GitHub
         github: HYH-05/Server-Monitoring
         caption: 2025
-        # thumbnail: images/project-monitoring.png
+        thumbnail: images/project-monitoring.png
         quote: >
           중앙 집중화된 GUI 환경에서 실시간으로 관제하고, 장애 발생 시 자동으로 SMS 알림을 발송하는 통합 모니터링 시스템 구축
         description: |
