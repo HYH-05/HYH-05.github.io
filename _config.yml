@@ -39,7 +39,7 @@ content:
         quote: >
           AWS 멀티 리전에서 운영 중인 글로벌 게임 서비스 인프라를 온프레미스(IDC)로 마이그레이션하여 운영 비용 절감 및 인프라 효율화
         description: |
-          <!-- ![아키텍처 다이어그램](images/project-migration.png) -->
+          <img src="images/project-migration.png" width="100%" alt="아키텍처 다이어그램">
 
           **담당 역할:** 인프라 아키텍처 설계 및 마이그레이션 총괄
 
@@ -68,7 +68,7 @@ content:
         quote: >
           IDC, 사무실 방화벽, 웹 서비스(LB, WAF) 등 분산된 인프라 환경의 로그를 중앙 집중식으로 수집하고, ELK 스택을 활용하여 보안 관제 및 트래픽 분석 체계 구축
         description: |
-          ![Kibana 대시보드](images/project-elk.png)
+          <img src="images/project-elk.png" width="100%" alt="Kibana 대시보드">
 
           **담당 역할:** 로그 수집 파이프라인 설계 및 ELK 시스템 구축
 
@@ -99,7 +99,7 @@ content:
         quote: >
           중앙 집중화된 GUI 환경에서 실시간으로 관제하고, 장애 발생 시 자동으로 SMS 알림을 발송하는 통합 모니터링 시스템 구축
         description: |
-          <!-- ![모니터링 GUI](images/project-monitoring.png) -->
+          <img src="images/project-monitoring.png" width="100%" alt="모니터링 GUI">
 
           **담당 역할:** 시스템 설계 및 개발
 
@@ -124,7 +124,7 @@ content:
         quote: >
           design-git, dev-git, web-git 서버의 마이그레이션 및 재설치 작업
         description: |
-          <!-- ![GitLab 구성도](images/project-gitlab.png) -->
+          <img src="images/project-gitlab.png" width="100%" alt="GitLab 구성도">
 
           **담당 역할:** 마이그레이션 수행 및 트러블슈팅
 
@@ -150,7 +150,7 @@ content:
         quote: >
           전사 게임 서버의 2차 백업(게임 서버 → IDC) 및 3차 백업(IDC → S3) 프로세스 재정립 및 스크립트 고도화
         description: |
-          <!-- ![백업 프로세스](images/project-backup.png) -->
+          <img src="images/project-backup.png" width="100%" alt="백업 프로세스">
 
           **담당 역할:** 백업 프로세스 설계 및 스크립트 개발
 
@@ -175,7 +175,7 @@ content:
         quote: >
           기존 온프레미스 서버의 백업 데이터를 S3로 이전하고, 내부 백업 서버 교체
         description: |
-          <!-- ![데이터 이전](images/project-data-migration.png) -->
+          <img src="images/project-data-migration.png" width="100%" alt="데이터 이전">
 
           **담당 역할:** 데이터 이전 및 검증
 
@@ -201,7 +201,7 @@ content:
         quote: >
           Ansible과 Semaphore 도입을 통해 코드형 인프라(IaC) 원칙을 조직의 운영 방식에 통합
         description: |
-          <!-- ![Ansible 구성](images/project-ansible.png) -->
+          <img src="images/project-ansible.png" width="100%" alt="Ansible 구성">
 
           **담당 역할:** IaC 도입 및 자동화 구축
 
