@@ -42,7 +42,7 @@ content:
         title: AWS → IDC 게임 서버 인프라 마이그레이션
         caption: |
           2026
-          <br><em>AWS 멀티 리전 글로벌 게임 인프라를 IDC로 마이그레이션, 운영 비용 절감</em>
+          <p><em>AWS 멀티 리전 글로벌 게임 인프라를 IDC로 마이그레이션, 운영 비용 절감</em></p>
         description: |
 
           **담당 역할:** 인프라 아키텍처 설계 및 마이그레이션 총괄
