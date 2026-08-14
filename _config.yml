@@ -85,6 +85,7 @@ content:
       - layout: left
         border: weak
         title: 모니터링 통합 프로그램 개발
+        link: https://github.com/HYH-05/Server-Monitoring
         caption: 2025
         quote: >
           중앙 집중화된 GUI 환경에서 실시간으로 관제하고, 장애 발생 시 자동으로 SMS 알림을 발송하는 통합 모니터링 시스템 구축
