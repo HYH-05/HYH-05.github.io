@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: 하영호 (Youngho Ha)
-title: Infrastructure Engineer
+title: Infrastructure Engineer | Game Service Operations
 email: jj6662ll27@gmail.com
 
 # Dark Mode (true/false/never)
@@ -25,13 +25,15 @@ additional_links:
 # About Section
 about_profile_image: images/profile.jpg
 about_content: |
-  저는 모르는 것 앞에서 멈추지 않고, 기초부터 직접 쌓아 올려 끝까지 해내는 사람입니다.
+  저는 모르는 문제 앞에서 멈추기보다 기초부터 직접 확인하고, 해결될 때까지 끝까지 파고드는 인프라 엔지니어입니다.
 
-  체육특기생에서 IT 엔지니어로의 전환은 저에게 "출발점은 중요하지 않다"는 확신을 심어줬습니다. 이 태도는 실무에서도 동일하게 적용됩니다. 새로운 기술을 마주하면 공식 문서부터 읽고, 직접 테스트 환경을 구성하고, 실 서비스에 적용할 때까지 반복합니다.
+  체육특기생에서 컴퓨터공학과로 전환한 경험을 통해 출발점보다 꾸준히 쌓아 올리는 과정이 중요하다는 것을 배웠습니다. 새로운 기술이나 장애를 접하면 공식 문서와 기존 구성 정보를 확인하고, 테스트 환경에서 검증한 뒤 운영 환경에 적용합니다.
 
-  현재는 게임 회사에서 인프라 엔지니어로 근무하며, AWS 멀티 리전 인프라를 IDC로 마이그레이션하는 프로젝트를 주도했습니다. ELK 기반 보안 관제 시스템을 구축하여 분산된 로그를 통합 관리하는 환경을 만들었습니다. 또한 백업 자동화 스크립트와 모니터링 시스템을 직접 개발하고, Ansible을 도입하여 인프라 운영을 표준화했습니다.
+  현재는 게임 회사에서 10년 이상 서비스된 레거시 게임의 국내외 라이브 서비스를 운영하고 있습니다. AWS 멀티 리전 인프라를 IDC로 마이그레이션하는 프로젝트를 주도했으며, Linux·Windows Server 기반 하이브리드 인프라의 정기 점검, 유지보수, 장애 대응을 수행하고 있습니다.
 
-  주로 AWS, Linux, ELK Stack, Ansible, Bash/Python, 네트워크/방화벽 기술을 다루고 있습니다.
+  ELK 기반 로그 통합 및 보안 관제 환경, Zabbix 모니터링 체계를 구축하고, 백업·점검·로그 수집 작업을 스크립트로 자동화했습니다. Ansible로 서버 구성과 패치 작업을 표준화했으며, Git·Jenkins 기반의 기존 CI/CD 환경을 활용해 배포 및 변경 작업을 수행했습니다.
+
+  주로 AWS, Linux, Windows Server, ELK Stack, Zabbix, Ansible, Bash/Python, 네트워크·방화벽 기술을 다루고 있습니다.
 
 content:
   - title: Projects
@@ -58,7 +60,7 @@ content:
 
           **성과**
           - Live/QA 환경 마이그레이션 완료
-          - AWS 월 운영 비용 절감 (Network Firewall 제거, 미사용 리소스 정리)
+          - AWS 월 운영 비용 절감 (미사용 리소스 정리)
           - 하이브리드 아키텍처 구축으로 서비스 연속성 확보
 
           **기술 스택:** AWS (EC2, VPC, Security Group, EIP, EBS, S3, Network Firewall), IDC, FortiGate, Rocky Linux, MySQL, Bash, Zabbix, SoftEther VPN
@@ -219,11 +221,16 @@ content:
         description: |
           **인프라팀 소속**
 
-          - AWS 및 온프레미스 하이브리드 인프라 설계/구축/운영 (VPC, EC2, NAT, 포트포워딩)
+          - 국내외 게임 서비스의 AWS 및 온프레미스 하이브리드 인프라 설계/구축/운영
+          - Linux 및 Windows Server 정기 점검, 유지보수, 이벤트 로그 분석 및 장애 대응
+          - AWS 멀티 리전 인프라의 IDC 마이그레이션 및 물리 서버·네트워크·방화벽·VPN 구성
+          - VPC, EC2, NAT, 포트포워딩 및 AWS Security Group 기반 네트워크 운영
           - Zabbix, ELK 기반 모니터링 및 로그 중앙 집중화 체계 구축
+          - 백업, 서버 점검, 로그 수집 등 반복 운영 작업의 스크립트 자동화
           - 인프라 비용 분석 및 최적화 (유휴 리소스 정리, Lifecycle 정책 적용)
           - 방화벽/AWS SG 보안 정책 설계 및 IAM 권한 관리
           - Terraform, Ansible 기반 IaC 자동화 및 형상 관리
+          - Git·Jenkins 기반 기존 CI/CD 환경을 활용한 형상 관리 및 자동화 배포
           - 백업 정책 수립, 자동화 및 복구 테스트 운영
 
   - title: Education
@@ -300,6 +307,7 @@ content:
       ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
       ![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
       ![SVN](https://img.shields.io/badge/SVN-809CC9?style=flat-square&logo=subversion&logoColor=white)
+      ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
 
       **Backup & Storage**
 
