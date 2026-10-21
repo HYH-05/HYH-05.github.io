@@ -220,7 +220,6 @@ content:
 
       **OS**
 
-      Ubuntu를 포함한 여러 Linux 배포판과 Windows Server를 운영했습니다.
 
       ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
       ![CentOS](https://img.shields.io/badge/CentOS-262577?style=flat-square&logo=centos&logoColor=white)
@@ -233,7 +232,6 @@ content:
 
       **Monitoring & Logging**
 
-      ELK 로그 수집·분석과 ElastAlert 연계 자동 차단을 구현했습니다.
 
       ![Zabbix](https://img.shields.io/badge/Zabbix-CC0000?style=flat-square&logo=zabbix&logoColor=white)
       ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
@@ -249,14 +247,12 @@ content:
 
       **Automation & IaC**
 
-      Ansible·Semaphore로 설정 배포와 점검을 자동화했습니다. Terraform은 게임 서비스 일부 인프라를 직접 구성한 경험이 있습니다.
 
       ![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white)
       ![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat-square&logo=terraform&logoColor=white)
 
       **Scripting**
 
-      Bash 백업 스크립트와 Python 모니터링 프로그램을 개발하고 Amazon Connect 전화 알림을 연동했습니다.
 
       ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
       ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
