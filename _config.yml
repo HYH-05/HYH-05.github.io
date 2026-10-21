@@ -25,213 +25,164 @@ additional_links:
 # About Section
 about_profile_image: images/profile.jpg
 about_content: |
-  저는 모르는 문제 앞에서 멈추기보다 기초부터 직접 확인하고, 해결될 때까지 끝까지 파고드는 인프라 엔지니어입니다.
+  현재 게임 회사에서 Ubuntu·Rocky Linux 등 Linux 배포판과 Windows Server를 운영하고 있습니다. 국내외 게임 서비스의 AWS·IDC 하이브리드 인프라를 담당하며 정기 점검, 유지보수와 장애 대응을 수행하고 있습니다.
 
-  체육특기생에서 컴퓨터공학과로 전환한 경험을 통해 출발점보다 꾸준히 쌓아 올리는 과정이 중요하다는 것을 배웠습니다. 새로운 기술이나 장애를 접하면 공식 문서와 기존 구성 정보를 확인하고, 테스트 환경에서 검증한 뒤 운영 환경에 적용합니다.
+  AWS 멀티 리전 게임 서비스의 IDC 이전을 주도해 AWS 운영 비용을 50% 이상 절감했습니다. 전체 프로젝트에 Ansible을 적용해 서비스 설정 파일 배포와 하드웨어 점검을 자동화하고, 점검·배포 업무 시간을 70% 이상 단축했습니다.
 
-  현재는 게임 회사에서 10년 이상 서비스된 레거시 게임의 국내외 라이브 서비스를 운영하고 있습니다. AWS 멀티 리전 인프라를 IDC로 마이그레이션하는 프로젝트를 주도했으며, Linux·Windows Server 기반 하이브리드 인프라의 정기 점검, 유지보수, 장애 대응을 수행하고 있습니다.
+  백업 프로세스를 개선해 압축 파일 용량을 30% 줄였으며, 파일 수·크기·체크섬 검증으로 데이터 손실률 0%를 확인했습니다. ELK로 보안 로그를 통합하고 웹 공격·VPN 로그인 시도 탐지와 ElastAlert 연계 자동 차단도 구현했습니다.
 
-  ELK 기반 로그 통합 및 보안 관제 환경, Zabbix 모니터링 체계를 구축하고, 백업·점검·로그 수집 작업을 스크립트로 자동화했습니다. Ansible로 서버 구성과 패치 작업을 표준화했으며, Git·Jenkins 기반의 기존 CI/CD 환경을 활용해 배포 및 변경 작업을 수행했습니다.
-
-  주로 AWS, Linux, Windows Server, ELK Stack, Zabbix, Ansible, Bash/Python, 네트워크·방화벽 기술을 다루고 있습니다.
+  장애가 발생하면 지표와 로그로 영향 범위를 파악하고 관련 부서와 복구를 진행합니다. 새로운 기술과 변경 작업은 공식 문서와 기존 구성을 확인하고 테스트한 뒤 운영 환경에 적용합니다.
 
 content:
-  - title: Projects
-    layout: list
-    content:
-      - layout: left
-        border: weak
-        title: AWS → IDC 게임 서버 인프라 마이그레이션
-        caption: 2026
-        description: |
-          *AWS 멀티 리전 글로벌 게임 인프라를 IDC로 마이그레이션, 운영 비용 절감*
-
-          **담당 역할:** 인프라 아키텍처 설계 및 마이그레이션 총괄
-
-          **수행 업무**
-          - IDC 서버 환경 구축 및 초기 설정 (Live/QA 환경, 10대 이상)
-          - AWS-IDC 하이브리드 아키텍처 설계 (AWS 잔류/IDC 이전 서버 분리 설계, 리전 간 통신 구조 및 장애 대응 방안 수립)
-          - 네트워크 통신 경로 설계 및 보안 정책 수립 (방화벽 Inbound/Outbound 정책, NAT, VIP 포트포워딩, AWS Security Group)
-          - AWS 인프라 구축 및 관리 (EC2, EIP, Network Firewall 비용 최적화, 미사용 리소스 정리)
-          - 스토리지 비용 최적화 (S3 버킷 정리, 라이프사이클 정책 적용)
-          - 모니터링 체계 구축 (Zabbix 연동)
-          - 백업 자동화 시스템 구축
-          - 마이그레이션 계획 수립 및 실행 (서비스 영향도 분석, 롤백 계획, 단계별 검증)
-
-          **성과**
-          - Live/QA 환경 마이그레이션 완료
-          - AWS 월 운영 비용 절감 (미사용 리소스 정리)
-          - 하이브리드 아키텍처 구축으로 서비스 연속성 확보
-
-          **기술 스택:** AWS (EC2, VPC, Security Group, EIP, EBS, S3, Network Firewall), IDC, FortiGate, Rocky Linux, MySQL, Bash, Zabbix, SoftEther VPN
-
-      - layout: left
-        border: weak
-        title: ELK 기반 통합 로그 분석 및 보안 관제 시스템 구축
-        caption: 2025
-        thumbnail: images/project-elk.png
-        description: |
-          *분산된 인프라 로그를 중앙 수집, ELK 기반 보안 관제 체계 구축*
-
-          <img src="images/project-elk.png" width="50%" alt="Kibana 대시보드">
-
-          **담당 역할:** 로그 수집 파이프라인 설계 및 ELK 시스템 구축
-
-          **수행 업무**
-          - 로그 수집 파이프라인 설계 및 구축 (IDC 방화벽, 사무실 방화벽, LB, WAF 로그 실시간 수집)
-          - 각 로그 소스 특성에 맞춘 Grok 필터 커스터마이징
-          - GeoIP 등 보안 분석용 필드 추가를 통한 로그 정제
-          - ELK 스택 구축 및 운영 (Elasticsearch, Logstash, Kibana)
-          - ILM(Index Lifecycle Management) 정책 설계 및 적용 (Hot/Warm/Cold)
-          - Kibana 기반 보안 이벤트 및 트래픽 시각화 대시보드 개발
-          - 운영 문서화 및 팀 내 기술 공유
-
-          **성과**
-          - 분산된 보안 이벤트를 단일 화면에서 관제 가능한 통합 모니터링 환경 구축
-          - 텍스트 기반 로그 분석에서 쿼리 기반 검색/필터링 체계로 전환
-          - 장애 대응 시간(MTTR) 단축 및 근본 원인 분석 기반 확보
-
-          **기술 스택:** Elasticsearch, Logstash, Kibana, Grok Filter, GeoIP, ILM, FortiGate, WAF, Load Balancer
-
-      - layout: left
-        border: weak
-        title: 모니터링 통합 프로그램 개발
-        caption: 2025
-        thumbnail: images/project-monitoring.png
-        description: |
-          *중앙 집중화된 GUI 환경에서 실시간 관제, 장애 시 SMS 자동 알림*
-
-          <img src="images/project-monitoring.png" width="50%" alt="모니터링 GUI">
-
-          [![GitHub](https://img.shields.io/badge/🔗_GitHub-Source_Code-2ea44f?style=for-the-badge)](https://github.com/HYH-05/Public/tree/main/projects/monitoring-dashboard)
-
-          **담당 역할:** 시스템 설계 및 개발
-
-          **수행 업무**
-          - 여러 서비스의 포트 상태를 주기적으로 확인하고 직관적인 색상으로 GUI에 표시
-          - DirectSend API 연동을 통해 장애/복구 감지 시 SMS 자동 발송
-          - 서비스 및 수신자를 그룹 기반으로 관리, 모니터링 주기 및 활성화 상태 개별 제어
-          - 모든 설정을 암호화하여 config.json 파일로 영구 저장
-
-          **성과**
-          - 장애 대응 시간을 극적으로 단축
-          - 운영 환경 변화에 대한 대응 유연성 및 효율성
-          - 운영자의 상태 파악 시간 및 피로도 최소화
-
-          **기술 스택:** Python, GUI, API 연동, 암호화
-
-      - layout: left
-        border: weak
-        title: GitLab 마이그레이션
-        caption: 2025
-        description: |
-          *design-git, dev-git, web-git 서버 마이그레이션 및 재설치*
-
-          **담당 역할:** 마이그레이션 수행 및 트러블슈팅
-
-          **수행 업무**
-          - design-git: 신규 서버 마이그레이션, 10G NIC 추가 후 인터페이스 문제 해결, NIC 불량 진단 및 교체
-          - dev-git: OS 재설치 및 디스크 교체, PCIe Correctable Error 분석 및 ASPM 옵션 조정
-          - mdadm RAID Rebuild 지연 문제 대응 (리빌딩 속도 제한 해제)
-          - 예비 서버를 이용한 추가 git 환경 구축 (비상 대응)
-          - 10G 네트워크 지원 완료
-
-          **성과**
-          - 개발 협업 환경의 업무 연속성 보장 및 데이터 유실 위험 해소
-          - Git 작업 속도 개선으로 개발 생산성 향상
-          - git 보안 취약점 대비 (버전업)
-
-          **기술 스택:** GitLab, Linux, NIC, RAID, mdadm
-
-      - layout: left
-        border: weak
-        title: IDC, S3 로그 백업 프로세스 수정
-        caption: 2025
-        description: |
-          *2차 백업(서버→IDC), 3차 백업(IDC→S3) 프로세스 재정립 및 스크립트 고도화*
-
-          **담당 역할:** 백업 프로세스 설계 및 스크립트 개발
-
-          **수행 업무**
-          - 기존 프로세스에서 발생한 누락된 백업 데이터 식별 및 복구 조치
-          - 2차 백업 스크립트 고도화 (rsync 성공/실패 판단, 실패 시 알람 발송, 불필요 파일 제외)
-          - 3차 백업 스크립트 최적화 (S3 전송 데이터 무결성 검증, zstd 고효율 압축 적용)
-          - 함수 단위 모듈화 및 확장 가능한 구조로 리팩토링
-
-          **성과**
-          - 백업 장애 발생 시 대응 시간 단축
-          - 데이터 유실/변조 없이 클라우드 이전 검증
-          - 고효율 압축 및 불필요한 로그 제외로 비용 절감
-
-          **기술 스택:** Bash, rsync, AWS S3, zstd
-
-      - layout: left
-        border: weak
-        title: (구)게임 백업 데이터 이전 + 내부 백업 서버 교체
-        caption: 2024
-        description: |
-          *온프레미스 백업 데이터 S3 이전 및 백업 서버 교체*
-
-          **담당 역할:** 데이터 이전 및 검증
-
-          **수행 업무**
-          - 원본 서버들의 백업 데이터 크기 및 구조 파악
-          - AWS CLI 및 rsync 설치, 설정, 테스트
-          - S3 버킷 정책(Bucket Policy) 설정
-          - 트래픽 제한 및 스케줄러 활용한 데이터 전송
-          - S3 데이터의 크기 및 파일 수를 원본과 비교, 랜덤 파일 다운로드 검증
-
-          **성과**
-          - (구)백업 데이터를 S3로 중앙 집중화 및 보존
-          - 대용량 백업 데이터를 중단 없이 안전하게 S3로 이전 완수
-          - 정리된 서버의 재활용 가능
-
-          **기술 스택:** AWS CLI, AWS S3, rsync
-
-      - layout: left
-        border: weak
-        title: Ansible 도입
-        caption: 2025
-        description: |
-          *Ansible + Semaphore로 코드형 인프라(IaC) 도입*
-
-          **담당 역할:** IaC 도입 및 자동화 구축
-
-          **수행 업무**
-          - 자동화 목표 및 범위 정의 (수동 작업 목록화, PoC 선정)
-          - Ansible R&D (반복문, 조건문, 핸들러, 롤, 인프라 구성 자동화)
-          - 보안설정 자동화 (패스워드 정책, 디렉터리/파일 접근 권한)
-          - 시스템 모니터링 자동화 (CPU, 메모리, 디스크 사용률)
-          - Semaphore UI 연동
-
-          **성과**
-          - 엔지니어의 반복적인 수동 작업 부담 제거
-          - Human Error 가능성 현저히 낮춰 시스템 안정성 극대화
-          - 인프라 보안 수준의 균일한 유지 및 설정 이력 추적(Audit Trail) 확보
-
-          **기술 스택:** Ansible, Semaphore, Git, IaC
-
   - title: Career
     layout: list
     content:
       - layout: left
         title: (주)마상소프트
-        sub_title: Infrastructure Engineer
+        sub_title: Infrastructure Engineer · 대리
         caption: 2024.08 - 현재
         description: |
-          **인프라팀 소속**
+          게임 개발·서비스 기업에서 국내외 게임 서비스의 AWS·IDC 하이브리드 인프라를 운영하고 있습니다.
 
-          - 국내외 게임 서비스의 AWS 및 온프레미스 하이브리드 인프라 설계/구축/운영
-          - Linux 및 Windows Server 정기 점검, 유지보수, 이벤트 로그 분석 및 장애 대응
-          - AWS 멀티 리전 인프라의 IDC 마이그레이션 및 물리 서버·네트워크·방화벽·VPN 구성
-          - VPC, EC2, NAT, 포트포워딩 및 AWS Security Group 기반 네트워크 운영
-          - Zabbix, ELK 기반 모니터링 및 로그 중앙 집중화 체계 구축
-          - 백업, 서버 점검, 로그 수집 등 반복 운영 작업의 스크립트 자동화
-          - 인프라 비용 분석 및 최적화 (유휴 리소스 정리, Lifecycle 정책 적용)
-          - 방화벽/AWS SG 보안 정책 설계 및 IAM 권한 관리
-          - Terraform, Ansible 기반 IaC 자동화 및 형상 관리
-          - Git·Jenkins 기반 기존 CI/CD 환경을 활용한 형상 관리 및 자동화 배포
-          - 백업 정책 수립, 자동화 및 복구 테스트 운영
+          - Ubuntu·Rocky Linux·Windows Server의 서비스 상태와 시스템 로그, CPU·메모리·디스크·RAID를 정기 점검했습니다.
+          - 서버 설정 변경과 패치·보안 설정을 수행하고, 작업 전 검증과 작업 후 정상 여부를 확인했습니다.
+          - 장애 발생 시 지표·로그로 원인을 분석하고 관련 부서와 복구를 진행했습니다. 조치 내용과 재발 방지 방안을 기록했습니다.
+          - 정기 백업 결과와 실패 내역을 확인하고, 백업 정책·보존주기 관리와 복구 테스트를 수행했습니다.
+          - VPC·서브넷·라우팅, NAT·포트포워딩·VPN과 방화벽·AWS SG·IAM 권한을 구성·운영했습니다.
+          - 게임 서비스 일부 인프라를 Terraform으로 직접 구성했습니다. 기존 Git·Jenkins CI/CD 환경을 활용해 배포 작업과 변경 이력을 관리했습니다.
+
+  - title: Projects
+    layout: list
+    content:
+      - layout: left
+        border: weak
+        title: "AWS-IDC 하이브리드 아키텍처 설계 및 이전"
+        caption: "2026.05 - 2026.08  |  4개월"
+        description: |
+          **성과:** **AWS 운영 비용을 50% 이상 절감했습니다.** Live/QA 환경을 IDC로 이전하고 AWS 잔류 시스템과 연결했으며, 모니터링과 백업을 구성했습니다.
+
+          **담당 역할:** 인프라 아키텍처 설계, 이전 계획 수립과 마이그레이션을 주도했습니다.
+
+          **수행 내용**
+
+          - AWS에 남길 시스템과 IDC로 옮길 시스템을 구분하고, Live/QA 서버 구성과 시스템 간 통신 경로를 설계했습니다.
+          - IDC 물리 서버와 OS를 초기 설정하고 VPN을 구축했습니다. 방화벽 Inbound/Outbound, NAT, VIP 포트포워딩과 AWS Security Group 정책을 구성했습니다.
+          - 서비스 영향도를 분석해 단계별 이전·검증·롤백 절차를 준비하고 마이그레이션을 수행했습니다.
+          - EC2·EIP·Network Firewall 등 AWS 리소스의 사용 현황과 비용을 점검하고 유휴 리소스를 정리했습니다.
+          - S3 보관 대상을 정비하고 라이프사이클 정책을 적용했습니다. 이전 서버를 Zabbix에 연동하고 백업을 자동화했습니다.
+
+          **활용 기술:** AWS EC2·VPC·SG·EIP·EBS·S3·Network Firewall, IDC, FortiGate, Rocky Linux, SoftEther VPN, Zabbix
+
+      - layout: left
+        border: weak
+        title: "Ansible·Semaphore 기반 서버 구성 자동화"
+        caption: "2025.09 - 2025.12  |  4개월"
+        description: |
+          **성과:** **전체 프로젝트에 Ansible을 적용해 점검·배포 업무 시간을 70% 이상 단축했습니다.** Zabbix·SQL 관련 서비스·기타 에이전트의 설정 파일 배포와 하드웨어 점검을 자동화했습니다.
+
+          **담당 역할:** 자동화 대상 선정, PoC, 구성 코드 작성과 실행 환경 연계를 담당했습니다.
+
+          **수행 내용**
+
+          - 패스워드 정책, 파일·디렉터리 접근 권한, CPU·메모리·디스크 점검을 Ansible로 구현하고 Semaphore UI와 연계했습니다.
+          - Zabbix, SQL 관련 서비스와 기타 에이전트의 config·설정 파일을 자동 배포하고 Git으로 변경 이력을 관리했습니다.
+          - 하드웨어 점검을 자동화해 반복적인 서버 확인 작업을 줄였습니다.
+          - 조건문·반복문·핸들러·롤을 활용해 반복 작업을 구성했습니다.
+
+          **활용 기술:** Ansible, Semaphore, Git
+
+      - layout: left
+        border: weak
+        title: "GitLab 정기 마이그레이션 및 운영 장애 대응"
+        caption: "2025년 - 현재  |  주기적 수행"
+        description: |
+          **성과:** 버전 업을 포함한 주기적 마이그레이션과 서버 장애 조치로 개발 협업 환경의 가용성을 유지했습니다. 비상 대응용 Git 환경도 구축했습니다.
+
+          **담당 역할:** GitLab 버전 업·서버 이전과 하드웨어·OS 장애 분석 및 조치를 담당했습니다.
+
+          **수행 내용**
+
+          - GitLab 버전 업과 서버 마이그레이션을 주기적으로 수행했습니다.
+          - NIC 인터페이스 문제를 분석해 불량 장비를 교체하고 OS 재설치와 디스크 교체를 수행했습니다.
+          - PCIe Correctable Error에 대해 ASPM 옵션을 조정하고 mdadm RAID 리빌드 속도 제한을 조정했습니다.
+
+          **활용 기술:** GitLab, Linux, NIC, RAID, mdadm
+
+      - layout: left
+        border: weak
+        title: "IDC·S3 백업 프로세스 개선"
+        caption: "2025년 1-2분기"
+        description: |
+          **성과:** **개선 전 대비 압축 파일 용량을 30% 줄이고 데이터 손실률 0%를 달성했습니다.** 누락된 백업 데이터를 식별·복구하고, 2차 백업의 전송 결과 확인·실패 알림과 3차 백업의 무결성 검증을 보완했습니다.
+
+          **담당 역할:** 백업 프로세스 정비, 자동화 스크립트 개발과 전송 결과 검증을 담당했습니다.
+
+          **수행 내용**
+
+          - 서버 → IDC의 2차 백업과 IDC → S3의 3차 백업을 점검하고, 누락 데이터 복구와 백업 절차 보완을 수행했습니다.
+          - rsync 성공·실패 판정과 실패 알림을 구현하고 전송 대상에서 불필요 파일을 제외했습니다.
+          - 전송 전후 파일 수·크기·체크섬을 모두 검증해 데이터 누락과 손상 여부를 확인했습니다. 스크립트는 함수 단위로 정리했습니다.
+
+          **활용 기술:** Bash, rsync, AWS S3, zstd
+
+      - layout: left
+        border: weak
+        title: "서비스 상태 모니터링 통합 프로그램 개발"
+        caption: "2025년"
+        thumbnail: images/project-monitoring.png
+        description: |
+          **성과:** 서비스 상태를 직관적인 GUI와 SMS·전화 알림으로 전달해 장애 대응 시간을 단축했습니다. Zabbix·Grafana 사용이 익숙하지 않은 타 부서 구성원도 상태를 확인하고 알림을 받을 수 있도록 구성했습니다.
+
+          **담당 역할:** Python 프로그램 설계·개발, 상태 점검과 SMS·전화 알림 연동을 담당했습니다.
+
+          **수행 내용**
+
+          - 서비스별 포트 상태를 주기적으로 확인해 GUI에 표시하고 DirectSend API로 장애·복구 SMS를 발송했습니다.
+          - Amazon Connect를 연동해 전화 알림을 구현했습니다.
+          - 서비스·수신자 그룹과 점검 주기·활성화 상태를 개별 관리하고, 설정을 암호화해 파일에 저장했습니다.
+
+          **활용 기술:** Python, GUI, DirectSend API, Amazon Connect
+
+          <img src="images/project-monitoring.png" width="50%" alt="모니터링 GUI">
+
+          [![GitHub](https://img.shields.io/badge/🔗_GitHub-Source_Code-2ea44f?style=for-the-badge)](https://github.com/HYH-05/Public/tree/main/projects/monitoring-dashboard)
+
+      - layout: left
+        border: weak
+        title: "ELK 기반 통합 로그 분석 및 보안 관제 구축"
+        caption: "2024.10 - 2025.03  |  6개월"
+        thumbnail: images/project-elk.png
+        description: |
+          **성과:** **웹 공격과 VPN 로그인 시도를 탐지하고 ElastAlert와 연계한 자동 차단을 구현했습니다.** 분산된 로그를 중앙에서 검색·분석하도록 바꿔 장애 원인 분석과 대응 시간을 단축했습니다.
+
+          **담당 역할:** 로그 수집 파이프라인 설계, ELK 구축과 탐지·자동 차단 기능 구현을 담당했습니다.
+
+          **수행 내용**
+
+          - IDC·사무실 방화벽, WAF, 로드밸런서의 로그를 중앙 수집했습니다.
+          - 소스별 Grok 필터를 작성하고 GeoIP 등 분석용 필드를 추가해 데이터를 정제했습니다.
+          - 웹 공격과 VPN 로그인 시도를 검출하고, ElastAlert 탐지 이벤트에 연계해 자동 차단하도록 구성했습니다.
+          - Kibana 보안 이벤트·트래픽 대시보드와 ILM 보관 정책을 적용하고 운영 절차와 구성 방법을 팀에 공유했습니다.
+
+          **활용 기술:** Elasticsearch, Logstash, Kibana, ElastAlert, Grok, GeoIP, ILM, FortiGate, WAF, LB
+
+          <img src="images/project-elk.png" width="50%" alt="Kibana 대시보드">
+
+      - layout: left
+        border: weak
+        title: "구 게임 DB 데이터 S3 이전 및 서버 재사용"
+        caption: "2024년"
+        description: |
+          **성과:** **구 게임 DB 데이터를 손실 없이 S3로 이전해 보존하고 기존 서버를 재사용했습니다.** 이전 대상 데이터를 모두 업로드한 뒤 원본과의 파일 수·크기 대조 및 표본 다운로드로 이전 결과를 검증했습니다.
+
+          **담당 역할:** 데이터 현황 파악, 전송 환경 구성과 이전 결과 검증을 담당했습니다.
+
+          **수행 내용**
+
+          - AWS CLI·rsync와 S3 버킷 정책을 구성하고 트래픽 제한·스케줄러로 데이터를 전송했습니다.
+          - 파일 수와 크기를 비교하고 표본 파일을 다운로드해 이전 결과를 검증했습니다.
+
+          **활용 기술:** AWS CLI, AWS S3, rsync
 
   - title: Education
     layout: list
@@ -241,7 +192,7 @@ content:
         sub_title: 컴퓨터공학부 (학사)
         caption: 2019.03 - 2025.02
         description: |
-          재학 시절, 저는 팀원들과 모바일 어플리케이션을 개발하는 소규모 프로젝트를 진행하며 팀워크와 마감 기한을 준수하는 능력 등 제 경력 전반에 걸쳐 도움이 된 핵심 역량들을 대부분 습득했습니다. 대학 생활을 진심으로 즐겼고, 건강한 일과 삶의 균형에 대해서도 많은 것을 배웠습니다.
+          안드로이드 앱 팀 프로젝트에서 네이버 클라우드 서버와 데이터베이스를 구성하고 앱과 연동했습니다.
 
   - title: Certifications
     layout: list
@@ -269,6 +220,8 @@ content:
 
       **OS**
 
+      Ubuntu를 포함한 여러 Linux 배포판과 Windows Server를 운영했습니다.
+
       ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
       ![CentOS](https://img.shields.io/badge/CentOS-262577?style=flat-square&logo=centos&logoColor=white)
       ![Rocky Linux](https://img.shields.io/badge/Rocky_Linux-10B981?style=flat-square&logo=rockylinux&logoColor=white)
@@ -279,6 +232,8 @@ content:
       ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 
       **Monitoring & Logging**
+
+      ELK 로그 수집·분석과 ElastAlert 연계 자동 차단을 구현했습니다.
 
       ![Zabbix](https://img.shields.io/badge/Zabbix-CC0000?style=flat-square&logo=zabbix&logoColor=white)
       ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
@@ -294,10 +249,14 @@ content:
 
       **Automation & IaC**
 
+      Ansible·Semaphore로 설정 배포와 점검을 자동화했습니다. Terraform은 게임 서비스 일부 인프라를 직접 구성한 경험이 있습니다.
+
       ![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white)
       ![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat-square&logo=terraform&logoColor=white)
 
       **Scripting**
+
+      Bash 백업 스크립트와 Python 모니터링 프로그램을 개발하고 Amazon Connect 전화 알림을 연동했습니다.
 
       ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
       ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
