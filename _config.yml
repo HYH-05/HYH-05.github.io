@@ -56,6 +56,26 @@ content:
     content:
       - layout: left
         border: weak
+        title: "AI 기반 서버 점검 및 변화 분석 자동화"
+        caption: "2026년 3분기 - 현재 | 개발·검증"
+        description: |
+          **성과:** 서버 상태 수집부터 이전 점검과의 비교, AI 분석, 종합 보고서 생성과 Slack 알림까지 자동화했습니다. 서버별 이상 징후와 우선 조치 항목을 보고서로 정리해 점검 결과를 확인할 수 있도록 구성했습니다.
+
+          **담당 역할:** 점검 스크립트와 Ansible 수집 환경, 변화 비교 로직, AI 분석 흐름과 알림 연계를 설계·구현했습니다.
+
+          **수행 내용**
+
+          - Ansible과 Bash로 여러 Linux 서버의 부하·메모리·디스크·프로세스·포트·계정·시스템 로그·로그인 기록을 수집했습니다.
+          - 최근 7일을 기본 점검 기간으로 설정하고, Python으로 이전 점검 원본과 비교해 디스크 사용률, 포트·계정·권한 항목, 재부팅과 오류 로그의 변화를 추출했습니다.
+          - 서버별 Claude 분석을 병렬 실행하고, 원문 근거에 따라 상태 등급과 신규·지속 이상 징후, 확인 명령과 조치 권고를 작성하도록 구성했습니다.
+          - 종합 분석 단계에서 서버별 결과를 모아 공통 이슈와 우선 조치 목록을 생성하고, Slack에 등급별 현황과 종합 보고서를 전달했습니다.
+          - 수집 실패 시 기존 비교 기준을 유지하고 수집·분석 실패를 구분했습니다. 점검 기간·병렬도·보고서 보관 기간을 설정할 수 있도록 구현했습니다.
+          - 계정 암호 해시를 마스킹하고 AI 분석 단계의 도구 사용을 제한했습니다. AI의 분석·권고와 실제 서버 조치를 분리했습니다.
+
+          **활용 기술:** Ansible, Bash, Python, Claude Code, Linux, sysstat, Slack API
+
+      - layout: left
+        border: weak
         title: "AWS-IDC 하이브리드 아키텍처 설계 및 이전"
         caption: "2026.05 - 2026.08  |  4개월"
         description: |
@@ -167,22 +187,6 @@ content:
           **활용 기술:** Elasticsearch, Logstash, Kibana, ElastAlert, Grok, GeoIP, ILM, FortiGate, WAF, LB
 
           <img src="images/project-elk.png" width="50%" alt="Kibana 대시보드">
-
-      - layout: left
-        border: weak
-        title: "구 게임 DB 데이터 S3 이전 및 서버 재사용"
-        caption: "2024년"
-        description: |
-          **성과:** **구 게임 DB 데이터를 손실 없이 S3로 이전해 보존하고 기존 서버를 재사용했습니다.** 이전 대상 데이터를 모두 업로드한 뒤 원본과의 파일 수·크기 대조 및 표본 다운로드로 이전 결과를 검증했습니다.
-
-          **담당 역할:** 데이터 현황 파악, 전송 환경 구성과 이전 결과 검증을 담당했습니다.
-
-          **수행 내용**
-
-          - AWS CLI·rsync와 S3 버킷 정책을 구성하고 트래픽 제한·스케줄러로 데이터를 전송했습니다.
-          - 파일 수와 크기를 비교하고 표본 파일을 다운로드해 이전 결과를 검증했습니다.
-
-          **활용 기술:** AWS CLI, AWS S3, rsync
 
   - title: Education
     layout: list
